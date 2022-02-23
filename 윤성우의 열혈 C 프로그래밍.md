@@ -6,7 +6,7 @@
 
 ## 0. 책 소개
 
-![책그림]()
+<img src= "https://user-images.githubusercontent.com/100129957/155291263-2072c665-2db3-4867-a88c-5c78a172c8f7.jpg" width = "300" height = "300">
 
 - [구매처](http://www.yes24.com/Product/Goods/4333686)
 
