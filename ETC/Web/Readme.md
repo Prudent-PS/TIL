@@ -1,6 +1,6 @@
 # WEB사이트를 직접 만들어보는 프로젝트
 
-## 출처 : [생활코딩](https://opentutorials.org/course/3084/18452)
+## 출처 : [생활코딩](https://opentutorials.org/course/3084)
 ### 학습목표
 1. Web사이트를 구성하는 기본적인 방법 이해
 2. HTML 밑 Web사이트를 구성하는데 필요한 필수 언어 학습
