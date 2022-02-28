@@ -1,6 +1,11 @@
 '''
 Hash 문제
+
+
 '''
+# paeng babo
+
+
 def solution(genres, plays):
     hash_map = {}
     idx = 0
@@ -22,13 +27,14 @@ def solution(genres, plays):
     prio_genre.sort(key=lambda x: -x[1])
     for g, p in prio_genre:
         if len(hash_map[g]) > 1:
-            hash_map[g].sort(key=lambda x: (-x[1], x[0]))    
+            hash_map[g].sort(key=lambda x: (-x[1], x[0]))
             answer.append(hash_map[g][0][0])
             answer.append(hash_map[g][1][0])
         else:
             answer.append(hash_map[g][0][0])
-    
+
     return answer
+
 
 def solution2(genres, plays):
     answer = []
@@ -38,10 +44,8 @@ def solution2(genres, plays):
         dic[genres[i]] = dic.get(genres[i], 0) + plays[i]
         album_list.append(album(genres[i], plays[i], i))
 
-    dic = sorted(dic.items(), key=lambda dic:dic[1], reverse=True)
+    dic = sorted(dic.items(), key=lambda dic: dic[1], reverse=True)
     album_list = sorted(album_list, reverse=True)
-
-
 
     while len(dic) > 0:
         play_genre = dic.pop(0)
@@ -56,6 +60,7 @@ def solution2(genres, plays):
 
     return answer
 
+
 class album:
     def __init__(self, genre, play, track):
         self.genre = genre
@@ -64,14 +69,19 @@ class album:
 
     def __lt__(self, other):
         return self.play < other.play
+
     def __le__(self, other):
         return self.play <= other.play
+
     def __gt__(self, other):
         return self.play > other.play
+
     def __ge__(self, other):
         return self.play >= other.play
+
     def __eq__(self, other):
         return self.play == other.play
+
     def __ne__(self, other):
         return self.play != other.play
 
