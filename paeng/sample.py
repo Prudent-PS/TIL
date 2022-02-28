@@ -3,7 +3,8 @@ Hash 문제
 
 
 '''
-# paeng babo
+# paeng babo1
+# paeng babo2
 
 
 def solution(genres, plays):
